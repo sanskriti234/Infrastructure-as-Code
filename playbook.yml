@@ -1,0 +1,13 @@
+- name: Configure local files
+  hosts: local
+  tasks:
+
+    - name: Add content to file1
+      lineinfile:
+        path: file1.txt
+        line: "Updated by Ansible"
+
+    - name: Add content to file2
+      lineinfile:
+        path: file2.txt
+        line: "Configured using Ansible"
